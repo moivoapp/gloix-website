@@ -1,491 +1,146 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>-</title>
-  <style>
-    html {
-      color: #1a1a1a;
-      background-color: #fdfdfd;
-    }
-    body {
-      margin: 0 auto;
-      max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      hyphens: auto;
-      overflow-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      font-kerning: normal;
-    }
-    @media (max-width: 600px) {
-      body {
-        font-size: 0.9em;
-        padding: 12px;
-      }
-      h1 {
-        font-size: 1.8em;
-      }
-    }
-    @media print {
-      html {
-        background-color: white;
-      }
-      body {
-        background-color: transparent;
-        color: black;
-        font-size: 12pt;
-      }
-      p, h2, h3 {
-        orphans: 3;
-        widows: 3;
-      }
-      h2, h3, h4 {
-        page-break-after: avoid;
-      }
-    }
-    p {
-      margin: 1em 0;
-    }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
-    }
-    img {
-      max-width: 100%;
-    }
-    svg {
-      height: auto;
-      max-width: 100%;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.4em;
-    }
-    h5, h6 {
-      font-size: 1em;
-      font-style: italic;
-    }
-    h6 {
-      font-weight: normal;
-    }
-    ol, ul {
-      padding-left: 1.7em;
-      margin-top: 1em;
-    }
-    li > ol, li > ul {
-      margin-top: 0;
-    }
-    blockquote {
-      margin: 1em 0 1em 1.7em;
-      padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
-      color: #606060;
-    }
-    code {
-      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
-      font-size: 85%;
-      margin: 0;
-      hyphens: manual;
-    }
-    pre {
-      margin: 1em 0;
-      overflow: auto;
-    }
-    pre code {
-      padding: 0;
-      overflow: visible;
-      overflow-wrap: normal;
-    }
-    .sourceCode {
-     background-color: transparent;
-     overflow: visible;
-    }
-    hr {
-      background-color: #1a1a1a;
-      border: none;
-      height: 1px;
-      margin: 1em 0;
-    }
-    table {
-      margin: 1em 0;
-      border-collapse: collapse;
-      width: 100%;
-      overflow-x: auto;
-      display: block;
-      font-variant-numeric: lining-nums tabular-nums;
-    }
-    table caption {
-      margin-bottom: 0.75em;
-    }
-    tbody {
-      margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    th {
-      border-top: 1px solid #1a1a1a;
-      padding: 0.25em 0.5em 0.25em 0.5em;
-    }
-    td {
-      padding: 0.125em 0.5em 0.25em 0.5em;
-    }
-    header {
-      margin-bottom: 4em;
-      text-align: center;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC ul {
-      padding-left: 1.3em;
-    }
-    #TOC > ul {
-      padding-left: 0;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-  </style>
-<style>
-body {
-    margin: 0;
-    background: #fff;
-    color: #111;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    line-height: 1.7;
-}
-main {
-    max-width: 820px;
-    margin: 0 auto;
-    padding: 50px 24px 70px;
-}
-h1 {
-    font-size: 30px;
-    line-height: 1.25;
-    margin-bottom: 10px;
-}
-h2 {
-    margin-top: 38px;
-    font-size: 21px;
-    line-height: 1.35;
-}
-p, li {
-    font-size: 16px;
-}
-ul, ol {
-    padding-left: 28px;
-}
-code {
-    padding: 2px 5px;
-    background: #f3f3f3;
-    border-radius: 3px;
-}
-@media (max-width: 600px) {
-    main { padding: 32px 18px 50px; }
-    h1 { font-size: 25px; }
-    h2 { font-size: 19px; }
-    p, li { font-size: 15px; }
-}
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad de GLOIX</title>
+<style>body{margin:0;background:#fff;color:#111;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.7}main{max-width:820px;margin:0 auto;padding:50px 24px 70px}h1{font-size:30px;line-height:1.25;margin:0 0 10px}h2{margin-top:38px;font-size:21px;line-height:1.35}p,li{font-size:16px}ul{padding-left:28px}@media(max-width:600px){main{padding:32px 18px 50px}h1{font-size:25px}h2{font-size:19px}p,li{font-size:15px}}</style>
 </head>
 <body>
 <main>
-<h1 id="política-de-privacidad-de-gloix">POLÍTICA DE PRIVACIDAD DE
-GLOIX</h1>
-<p><strong>Última actualización:</strong> <code>09/09/2026</code></p>
-<h2 id="objeto-de-esta-política-de-privacidad">1. Objeto de esta
-Política de Privacidad</h2>
-<p>Esta Política de Privacidad explica cómo se trata la información
-relacionada con el uso de la aplicación móvil <strong>GLOIX</strong> (en
-adelante, “GLOIX” o la “Aplicación”), qué información puede ser tratada
-por la propia Aplicación o por los servicios de terceros integrados en
-ella, con qué finalidades y cuáles son los derechos de los usuarios.</p>
-<p>GLOIX está diseñada para poder utilizarse sin crear una cuenta,
-registrarse o proporcionar directamente datos identificativos como
-nombre, correo electrónico o contraseña.</p>
-<p>GLOIX está disponible internacionalmente y puede ser utilizada por
-usuarios situados en distintos países. Cuando resulte aplicable, los
-tratamientos de datos se realizarán de acuerdo con la normativa
-correspondiente.</p>
-<h2 id="ausencia-de-cuenta-y-registro">2. Ausencia de cuenta y
-registro</h2>
-<p>GLOIX no dispone de un sistema de creación de cuentas ni de inicio de
-sesión.</p>
-<p>El usuario no necesita proporcionar su nombre, dirección de correo
-electrónico, número de teléfono, contraseña ni otros datos
-identificativos para utilizar las funciones principales de la
-Aplicación.</p>
-<p>GLOIX tampoco mantiene un perfil personal del usuario basado en una
-cuenta.</p>
-<p>Para determinadas funciones técnicas y servicios integrados, pueden
-utilizarse identificadores técnicos o relacionados con el dispositivo.
-Estos identificadores pueden ser tratados por GLOIX o por proveedores
-externos y pueden considerarse datos personales cuando permitan
-identificar directa o indirectamente a una persona, de acuerdo con la
-legislación aplicable.</p>
-<h2 id="información-que-puede-ser-tratada">3. Información que puede ser
-tratada</h2>
-<p>Aunque GLOIX no solicita directamente datos identificativos al
-usuario, el funcionamiento de la Aplicación y de determinados servicios
-integrados puede implicar el tratamiento de información técnica.</p>
-<p>Dependiendo del servicio utilizado, dicha información puede
-incluir:</p>
-<p>·        Información sobre el dispositivo.</p>
-<p>·        Modelo y fabricante del dispositivo.</p>
-<p>·        Sistema operativo y versión.</p>
-<p>·        Versión de la Aplicación.</p>
-<p>·        Identificadores técnicos o publicitarios.</p>
-<p>·        Dirección IP.</p>
-<p>·        Información sobre el uso de la Aplicación.</p>
-<p>·        Eventos relacionados con la utilización de determinadas
-funcionalidades.</p>
-<p>·        Información relacionada con los anuncios mostrados y las
-interacciones con ellos.</p>
-<p>·        Información técnica necesaria para garantizar la seguridad,
-estabilidad y correcto funcionamiento de la Aplicación.</p>
-<p>La información concreta que puede recopilarse depende también de la
-configuración de los servicios de terceros utilizados por GLOIX.</p>
-<h2
-id="información-que-gloix-no-solicita-ni-recopila-mediante-sus-funciones">4.
-Información que GLOIX no solicita ni recopila mediante sus
-funciones</h2>
+<h1>POLÍTICA DE PRIVACIDAD DE GLOIX</h1>
+<p>Última actualización: 09/09/2026</p>
+<p>1. Objeto de esta Política de Privacidad</p>
+<p>Esta Política de Privacidad explica cómo se trata la información relacionada con el uso de la aplicación móvil GLOIX (en adelante, &quot;GLOIX&quot; o la &quot;Aplicación&quot;), qué información puede ser tratada por la propia Aplicación o por los servicios de terceros integrados en ella, con qué finalidades y cuáles son los derechos de los usuarios.</p>
+<p>GLOIX está diseñada para poder utilizarse sin crear una cuenta, registrarse o proporcionar directamente datos identificativos como nombre, correo electrónico o contraseña.</p>
+<p>GLOIX está disponible internacionalmente y puede ser utilizada por usuarios situados en distintos países. Cuando resulte aplicable, los tratamientos de datos se realizarán de acuerdo con la normativa correspondiente.</p>
+<p>2. Ausencia de cuenta y registro</p>
+<p>GLOIX no dispone de un sistema de creación de cuentas ni de inicio de sesión.</p>
+<p>El usuario no necesita proporcionar su nombre, dirección de correo electrónico, número de teléfono, contraseña ni otros datos identificativos para utilizar las funciones principales de la Aplicación.</p>
+<p>GLOIX tampoco mantiene un perfil personal del usuario basado en una cuenta.</p>
+<p>Para determinadas funciones técnicas y servicios integrados, pueden utilizarse identificadores técnicos o relacionados con el dispositivo. Estos identificadores pueden ser tratados por GLOIX o por proveedores externos y pueden considerarse datos personales cuando permitan identificar directa o indirectamente a una persona, de acuerdo con la legislación aplicable.</p>
+<p>3. Información que puede ser tratada</p>
+<p>Aunque GLOIX no solicita directamente datos identificativos al usuario, el funcionamiento de la Aplicación y de determinados servicios integrados puede implicar el tratamiento de información técnica.</p>
+<p>Dependiendo del servicio utilizado, dicha información puede incluir:</p>
+<p>Información sobre el dispositivo.</p>
+<p>Modelo y fabricante del dispositivo.</p>
+<p>Sistema operativo y versión.</p>
+<p>Versión de la Aplicación.</p>
+<p>Identificadores técnicos o publicitarios.</p>
+<p>Dirección IP.</p>
+<p>Información sobre el uso de la Aplicación.</p>
+<p>Eventos relacionados con la utilización de determinadas funcionalidades.</p>
+<p>Información relacionada con los anuncios mostrados y las interacciones con ellos.</p>
+<p>Información técnica necesaria para garantizar la seguridad, estabilidad y correcto funcionamiento de la Aplicación.</p>
+<p>La información concreta que puede recopilarse depende también de la configuración de los servicios de terceros utilizados por GLOIX.</p>
+<p>4. Información que GLOIX no solicita ni recopila mediante sus funciones</p>
 <p>GLOIX no dispone de funciones destinadas a solicitar al usuario:</p>
-<p>·        Nombre y apellidos.</p>
-<p>·        Dirección de correo electrónico.</p>
-<p>·        Número de teléfono.</p>
-<p>·        Contraseña.</p>
-<p>·        Dirección postal.</p>
-<p>·        Contactos del dispositivo.</p>
-<p>·        Ubicación GPS.</p>
-<p>·        Fotografías personales.</p>
-<p>·        Vídeos personales.</p>
-<p>·        Grabaciones de audio.</p>
-<p>·        Documentos o archivos personales.</p>
-<p>·        Reflexiones o textos personales introducidos por el
-usuario.</p>
-<p>GLOIX tampoco necesita acceder a la galería, fotografías o archivos
-personales del dispositivo para utilizar sus funciones de generación y
-compartición de imágenes.</p>
-<h2 id="finalidades-del-tratamiento">5. Finalidades del tratamiento</h2>
-<p>La información que pueda ser tratada en relación con GLOIX puede
-utilizarse para las siguientes finalidades:</p>
-<p>1.     Permitir el funcionamiento técnico de la Aplicación.</p>
-<p>2.     Proporcionar sus funcionalidades.</p>
-<p>3.     Mantener la seguridad y estabilidad de GLOIX.</p>
-<p>4.     Detectar y solucionar errores técnicos.</p>
-<p>5.     Analizar de forma estadística el uso de la Aplicación.</p>
-<p>6.     Mejorar el funcionamiento, diseño y contenido de GLOIX.</p>
-<p>7.     Mostrar y gestionar publicidad.</p>
-<p>8.     Medir el rendimiento de los anuncios.</p>
-<p>9.     Cumplir obligaciones legales.</p>
-<p>10.  Prevenir usos fraudulentos o abusivos cuando resulte
-necesario.</p>
-<h2 id="google-analytics-para-firebase">6. Google Analytics para
-Firebase</h2>
-<p>GLOIX utiliza <strong>Google Analytics para Firebase</strong>, un
-servicio de análisis proporcionado por Google.</p>
-<p>Este servicio permite obtener información estadística sobre el uso de
-la Aplicación y comprender cómo se utiliza GLOIX, con el objetivo de
-mejorar su funcionamiento, detectar problemas y evaluar el rendimiento
-general de la Aplicación.</p>
-<p>La configuración de Analytics puede implicar la recopilación de
-información técnica sobre el dispositivo, identificadores, información
-sobre la Aplicación y determinados eventos relacionados con su
-utilización.</p>
-<p>La información recopilada mediante Google Analytics puede ser tratada
-por Google conforme a sus propias condiciones y política de
-privacidad.</p>
-<p>Cuando la legislación aplicable requiera consentimiento para
-determinados tratamientos de analítica, estos se realizarán de acuerdo
-con los mecanismos de consentimiento correspondientes.</p>
-<h2 id="publicidad-mediante-google-admob">7. Publicidad mediante Google
-AdMob</h2>
-<p>GLOIX utiliza <strong>Google AdMob</strong> para mostrar publicidad y
-financiar la Aplicación.</p>
-<p>Actualmente GLOIX incorpora <strong>dos unidades de publicidad en
-formato banner</strong>, que pueden mostrarse tanto en dispositivos
-Android como iOS.</p>
-<p>AdMob puede tratar información técnica y relacionada con el
-dispositivo, identificadores publicitarios, dirección IP, información
-relacionada con los anuncios mostrados y las interacciones con ellos,
-así como otra información necesaria para proporcionar, medir y proteger
-el servicio publicitario.</p>
-<p>La naturaleza del tratamiento y de los anuncios puede variar según la
-ubicación del usuario, la configuración de AdMob y las decisiones de
-consentimiento que correspondan conforme a la normativa aplicable.</p>
-<p>En determinadas jurisdicciones, especialmente en el Espacio Económico
-Europeo, Reino Unido y Suiza, Google establece requisitos específicos de
-consentimiento para determinados tratamientos relacionados con la
-publicidad personalizada y otros usos de datos.</p>
-<p>Cuando resulte necesario, GLOIX utilizará los mecanismos de
-consentimiento correspondientes para cumplir dichos requisitos.</p>
-<h2 id="generación-y-compartición-de-imágenes">8. Generación y
-compartición de imágenes</h2>
-<p>GLOIX dispone de una función que permite generar una imagen a partir
-de contenidos de la propia Aplicación.</p>
-<p>La imagen se genera en el propio dispositivo utilizando elementos y
-contenidos incorporados en GLOIX.</p>
-<p>Para esta función, GLOIX no accede a las fotografías, vídeos, galería
-ni archivos personales almacenados en el dispositivo.</p>
-<p>Cuando el usuario decide compartir la imagen, GLOIX utiliza la
-función de compartición proporcionada por el sistema operativo del
-dispositivo.</p>
-<p>El usuario puede seleccionar posteriormente la aplicación o servicio
-con el que desea compartir la imagen.</p>
-<p>Una vez que el contenido se comparte con una aplicación o servicio de
-terceros, el tratamiento realizado por dicho tercero queda sujeto a sus
-propias condiciones de uso y políticas de privacidad.</p>
-<h2 id="proveedores-de-servicios">9. Proveedores de servicios</h2>
-<p>GLOIX utiliza servicios tecnológicos de terceros necesarios para
-determinadas funciones de la Aplicación.</p>
+<p>Nombre y apellidos.</p>
+<p>Dirección de correo electrónico.</p>
+<p>Número de teléfono.</p>
+<p>Contraseña.</p>
+<p>Dirección postal.</p>
+<p>Contactos del dispositivo.</p>
+<p>Ubicación GPS.</p>
+<p>Fotografías personales.</p>
+<p>Vídeos personales.</p>
+<p>Grabaciones de audio.</p>
+<p>Documentos o archivos personales.</p>
+<p>Reflexiones o textos personales introducidos por el usuario, salvo el contenido que el usuario decida enviar voluntariamente mediante la función de sugerencias.</p>
+<p>GLOIX tampoco necesita acceder a la galería, fotografías o archivos personales del dispositivo para utilizar sus funciones de generación y compartición de imágenes.</p>
+<p>Las sugerencias enviadas voluntariamente por el usuario pueden incluir un nombre de usuario de Instagram. Si el usuario lo proporciona con la intención de aparecer como autor, GLOIX podrá mostrar dicho usuario junto a la sugerencia cuando esta sea seleccionada para su inclusión en la Aplicación o en publicaciones de GLOIX.</p>
+<p>5. Finalidades del tratamiento</p>
+<p>La información que pueda ser tratada en relación con GLOIX puede utilizarse para las siguientes finalidades:</p>
+<p>Permitir el funcionamiento técnico de la Aplicación.</p>
+<p>Proporcionar sus funcionalidades.</p>
+<p>Mantener la seguridad y estabilidad de GLOIX.</p>
+<p>Detectar y solucionar errores técnicos.</p>
+<p>Analizar de forma estadística el uso de la Aplicación.</p>
+<p>Mejorar el funcionamiento, diseño y contenido de GLOIX.</p>
+<p>Mostrar y gestionar publicidad.</p>
+<p>Medir el rendimiento de los anuncios.</p>
+<p>Cumplir obligaciones legales.</p>
+<p>Prevenir usos fraudulentos o abusivos cuando resulte necesario.</p>
+<p>Recibir, revisar y gestionar las sugerencias enviadas voluntariamente por los usuarios.</p>
+<p>Publicar o utilizar las sugerencias seleccionadas dentro de la Aplicación y en los canales de comunicación de GLOIX, incluyendo, cuando el usuario lo haya proporcionado voluntariamente, su nombre de usuario de Instagram como autor.</p>
+<p>6. Google Analytics para Firebase</p>
+<p>GLOIX utiliza Google Analytics para Firebase, un servicio de análisis proporcionado por Google.</p>
+<p>Este servicio permite obtener información estadística sobre el uso de la Aplicación y comprender cómo se utiliza GLOIX, con el objetivo de mejorar su funcionamiento, detectar problemas y evaluar el rendimiento general de la Aplicación.</p>
+<p>La configuración de Analytics puede implicar la recopilación de información técnica sobre el dispositivo, identificadores, información sobre la Aplicación y determinados eventos relacionados con su utilización.</p>
+<p>La información recopilada mediante Google Analytics puede ser tratada por Google conforme a sus propias condiciones y política de privacidad.</p>
+<p>Cuando la legislación aplicable requiera consentimiento para determinados tratamientos de analítica, estos se realizarán de acuerdo con los mecanismos de consentimiento correspondientes.</p>
+<p>7. Publicidad mediante Google AdMob</p>
+<p>GLOIX utiliza Google AdMob para mostrar publicidad y financiar la Aplicación.</p>
+<p>Actualmente GLOIX incorpora dos unidades de publicidad en formato banner, que pueden mostrarse tanto en dispositivos Android como iOS.</p>
+<p>AdMob puede tratar información técnica y relacionada con el dispositivo, identificadores publicitarios, dirección IP, información relacionada con los anuncios mostrados y las interacciones con ellos, así como otra información necesaria para proporcionar, medir y proteger el servicio publicitario.</p>
+<p>La naturaleza del tratamiento y de los anuncios puede variar según la ubicación del usuario, la configuración de AdMob y las decisiones de consentimiento que correspondan conforme a la normativa aplicable.</p>
+<p>En determinadas jurisdicciones, especialmente en el Espacio Económico Europeo, Reino Unido y Suiza, Google establece requisitos específicos de consentimiento para determinados tratamientos relacionados con la publicidad personalizada y otros usos de datos.</p>
+<p>Cuando resulte necesario, GLOIX utilizará los mecanismos de consentimiento correspondientes para cumplir dichos requisitos.</p>
+<p>8. Generación y compartición de imágenes</p>
+<p>GLOIX dispone de una función que permite generar una imagen a partir de contenidos de la propia Aplicación.</p>
+<p>La imagen se genera en el propio dispositivo utilizando elementos y contenidos incorporados en GLOIX.</p>
+<p>Para esta función, GLOIX no accede a las fotografías, vídeos, galería ni archivos personales almacenados en el dispositivo.</p>
+<p>Cuando el usuario decide compartir la imagen, GLOIX utiliza la función de compartición proporcionada por el sistema operativo del dispositivo.</p>
+<p>El usuario puede seleccionar posteriormente la aplicación o servicio con el que desea compartir la imagen.</p>
+<p>Una vez que el contenido se comparte con una aplicación o servicio de terceros, el tratamiento realizado por dicho tercero queda sujeto a sus propias condiciones de uso y políticas de privacidad.</p>
+<p>9. Proveedores de servicios</p>
+<p>GLOIX utiliza servicios tecnológicos de terceros necesarios para determinadas funciones de la Aplicación.</p>
 <p>Entre estos servicios se encuentran:</p>
-<p><strong>Google Analytics para Firebase</strong>, utilizado para
-análisis estadístico y medición del uso de la Aplicación.</p>
-<p><strong>Google AdMob</strong>, utilizado para proporcionar y
-gestionar la publicidad mostrada en GLOIX.</p>
-<p>Estos proveedores pueden tratar información técnica y otros datos
-necesarios para prestar sus respectivos servicios.</p>
-<p>Los tratamientos realizados directamente por estos proveedores pueden
-estar sujetos a sus propias políticas de privacidad y condiciones.</p>
-<p>El responsable de GLOIX podrá incorporar, modificar o sustituir
-proveedores tecnológicos cuando resulte necesario para el funcionamiento
-de la Aplicación.</p>
-<h2 id="base-jurídica-del-tratamiento">10. Base jurídica del
-tratamiento</h2>
-<p>La base jurídica del tratamiento dependerá de la finalidad
-concreta.</p>
-<p>Cuando el tratamiento sea necesario para proporcionar las
-funcionalidades de GLOIX o mantener su funcionamiento, podrá basarse en
-la ejecución del servicio solicitado por el usuario.</p>
-<p>Determinados tratamientos técnicos, de seguridad y prevención de usos
-fraudulentos podrán basarse, cuando resulte aplicable, en el interés
-legítimo del responsable.</p>
-<p>Cuando la legislación aplicable exija obtener el consentimiento del
-usuario para un determinado tratamiento, dicho tratamiento se basará en
-el consentimiento.</p>
-<p>En particular, determinados tratamientos relacionados con publicidad
-y analítica pueden requerir consentimiento en función de la ubicación
-del usuario y de la normativa aplicable.</p>
-<h2 id="consentimiento-y-preferencias-de-privacidad">11. Consentimiento
-y preferencias de privacidad</h2>
-<p>Cuando sea necesario obtener el consentimiento del usuario para
-determinados tratamientos, GLOIX utilizará los mecanismos de
-consentimiento correspondientes.</p>
-<p>En el caso de determinados tratamientos publicitarios gestionados
-mediante AdMob, Google establece mecanismos específicos para la gestión
-del consentimiento de los usuarios de determinadas regiones. Estos
-mecanismos permiten expresar las preferencias correspondientes y, cuando
-resulte aplicable, modificarlas posteriormente.</p>
-<p>Las decisiones del usuario respecto al consentimiento serán
-respetadas de acuerdo con la configuración de los servicios y la
-normativa aplicable.</p>
-<h2 id="conservación-de-la-información">12. Conservación de la
-información</h2>
-<p>GLOIX no crea una cuenta personal del usuario ni mantiene un
-historial personal de contenidos introducidos por este.</p>
-<p>La información técnica y de uso tratada mediante servicios de
-terceros, como Google Analytics y Google AdMob, puede conservarse
-durante los periodos establecidos por dichos proveedores y de acuerdo
-con sus propias políticas, configuraciones y obligaciones legales.</p>
-<p>El responsable de GLOIX conservará la información que pueda recibir
-directamente únicamente durante el tiempo necesario para las finalidades
-correspondientes y durante los plazos exigidos por la legislación
-aplicable.</p>
-<h2 id="transferencias-internacionales">13. Transferencias
-internacionales</h2>
-<p>Algunos de los proveedores utilizados por GLOIX pueden estar
-establecidos fuera del Espacio Económico Europeo o utilizar
-infraestructuras situadas en distintos países.</p>
-<p>Cuando el tratamiento implique una transferencia internacional de
-datos personales, esta se realizará utilizando los mecanismos y
-garantías previstos por la normativa aplicable.</p>
-<h2 id="seguridad">14. Seguridad</h2>
-<p>Se adoptarán medidas técnicas y organizativas razonables destinadas a
-proteger la información frente a accesos no autorizados, pérdida,
-alteración, divulgación o destrucción.</p>
-<p>No obstante, ningún sistema de almacenamiento o transmisión de
-información a través de Internet puede garantizar una seguridad
-absoluta.</p>
-<h2 id="derechos-de-los-usuarios">15. Derechos de los usuarios</h2>
-<p>Cuando resulte aplicable la normativa de protección de datos, el
-usuario podrá ejercer los derechos reconocidos por dicha normativa,
-incluyendo:</p>
-<p>·        Derecho de acceso.</p>
-<p>·        Derecho de rectificación.</p>
-<p>·        Derecho de supresión.</p>
-<p>·        Derecho a solicitar la limitación del tratamiento.</p>
-<p>·        Derecho de oposición.</p>
-<p>·        Derecho a la portabilidad de los datos.</p>
-<p>·        Derecho a retirar el consentimiento cuando el tratamiento se
-base en este.</p>
-<p>Para ejercer estos derechos, el usuario podrá contactar con el
-responsable mediante el correo indicado al final de esta Política de
-Privacidad.</p>
-<p>Cuando sea necesario para atender la solicitud, podrá solicitarse
-información adicional que permita verificar razonablemente la identidad
-del solicitante.</p>
-<p>El ejercicio de estos derechos será gratuito, salvo en aquellos casos
-en los que la normativa aplicable permita establecer una compensación o
-rechazar solicitudes manifiestamente infundadas o excesivas.</p>
-<h2 id="reclamaciones-ante-la-autoridad-de-control">16. Reclamaciones
-ante la autoridad de control</h2>
-<p>Si el usuario considera que el tratamiento de sus datos personales no
-se ajusta a la normativa aplicable, podrá presentar una reclamación ante
-la autoridad de protección de datos competente.</p>
-<p>En España, la autoridad de control es la <strong>Agencia Española de
-Protección de Datos (AEPD)</strong>.</p>
-<p>Los usuarios residentes en otros países podrán dirigirse, cuando
-corresponda, a la autoridad de protección de datos competente en su
-lugar de residencia.</p>
-<h2 id="menores-de-edad">17. Menores de edad</h2>
-<p>GLOIX no establece actualmente una edad mínima específica para
-utilizar la Aplicación.</p>
-<p>La Aplicación no está diseñada específicamente para recopilar datos
-personales de menores.</p>
-<p>Cuando la legislación aplicable establezca requisitos específicos
-respecto al tratamiento de datos personales de menores, se aplicarán las
-garantías correspondientes.</p>
-<h2 id="modificaciones-de-esta-política-de-privacidad">18.
-Modificaciones de esta Política de Privacidad</h2>
-<p>Esta Política de Privacidad podrá modificarse cuando resulte
-necesario debido a cambios en GLOIX, en los servicios utilizados, en la
-legislación aplicable o en las prácticas de tratamiento de
-información.</p>
-<p>La versión vigente estará disponible en la página correspondiente de
-GLOIX.</p>
-<p>Cuando se produzcan modificaciones relevantes, se procurará informar
-de ellas mediante los medios razonablemente disponibles.</p>
-<h2 id="contacto-y-datos-del-responsable">19. Contacto y datos del
-responsable</h2>
-<p>Para cualquier consulta relacionada con esta Política de Privacidad,
-el tratamiento de datos o el ejercicio de derechos, puedes contactar
-con:</p>
-<p><strong>Titular:</strong> <code>Bruno Mazzitelli Gorraiz</code></p>
-<p><strong>NIF/DNI:</strong> <code>44645982S</code></p>
-<p><strong>Correo electrónico:</strong>
-<code>gloixapp@gmail.com</code></p>
-<p><strong>Última actualización:</strong> <code>09/09/2026</code></p>
+<p>Google Analytics para Firebase, utilizado para análisis estadístico y medición del uso de la Aplicación.</p>
+<p>Google AdMob, utilizado para proporcionar y gestionar la publicidad mostrada en GLOIX.</p>
+<p>Estos proveedores pueden tratar información técnica y otros datos necesarios para prestar sus respectivos servicios.</p>
+<p>Los tratamientos realizados directamente por estos proveedores pueden estar sujetos a sus propias políticas de privacidad y condiciones.</p>
+<p>El responsable de GLOIX podrá incorporar, modificar o sustituir proveedores tecnológicos cuando resulte necesario para el funcionamiento de la Aplicación.</p>
+<h2>10. Base jurídica del tratamiento</h2>
+<p>La base jurídica del tratamiento dependerá de la finalidad concreta.</p>
+<p>Cuando el tratamiento sea necesario para proporcionar las funcionalidades de GLOIX o mantener su funcionamiento, podrá basarse en la ejecución del servicio solicitado por el usuario.</p>
+<p>Determinados tratamientos técnicos, de seguridad y prevención de usos fraudulentos podrán basarse, cuando resulte aplicable, en el interés legítimo del responsable.</p>
+<p>Cuando la legislación aplicable exija obtener el consentimiento del usuario para un determinado tratamiento, dicho tratamiento se basará en el consentimiento.</p>
+<p>En particular, determinados tratamientos relacionados con publicidad y analítica pueden requerir consentimiento en función de la ubicación del usuario y de la normativa aplicable.</p>
+<h2>11. Consentimiento y preferencias de privacidad</h2>
+<p>Cuando sea necesario obtener el consentimiento del usuario para determinados tratamientos, GLOIX utilizará los mecanismos de consentimiento correspondientes.</p>
+<p>En el caso de determinados tratamientos publicitarios gestionados mediante AdMob, Google establece mecanismos específicos para la gestión del consentimiento de los usuarios de determinadas regiones. Estos mecanismos permiten expresar las preferencias correspondientes y, cuando resulte aplicable, modificarlas posteriormente.</p>
+<p>Las decisiones del usuario respecto al consentimiento serán respetadas de acuerdo con la configuración de los servicios y la normativa aplicable.</p>
+<h2>12. Conservación de la información</h2>
+<p>GLOIX no crea una cuenta personal del usuario ni mantiene un historial personal de contenidos introducidos por este. Las sugerencias enviadas voluntariamente por los usuarios podrán conservarse durante el tiempo necesario para su revisión, gestión, posible publicación y cumplimiento de las obligaciones legales aplicables.</p>
+<p>La información técnica y de uso tratada mediante servicios de terceros, como Google Analytics y Google AdMob, puede conservarse durante los periodos establecidos por dichos proveedores y de acuerdo con sus propias políticas, configuraciones y obligaciones legales.</p>
+<p>El responsable de GLOIX conservará la información que pueda recibir directamente únicamente durante el tiempo necesario para las finalidades correspondientes y durante los plazos exigidos por la legislación aplicable.</p>
+<h2>13. Transferencias internacionales</h2>
+<p>Algunos de los proveedores utilizados por GLOIX pueden estar establecidos fuera del Espacio Económico Europeo o utilizar infraestructuras situadas en distintos países.</p>
+<p>Cuando el tratamiento implique una transferencia internacional de datos personales, esta se realizará utilizando los mecanismos y garantías previstos por la normativa aplicable.</p>
+<h2>14. Seguridad</h2>
+<p>Se adoptarán medidas técnicas y organizativas razonables destinadas a proteger la información frente a accesos no autorizados, pérdida, alteración, divulgación o destrucción.</p>
+<p>No obstante, ningún sistema de almacenamiento o transmisión de información a través de Internet puede garantizar una seguridad absoluta.</p>
+<h2>15. Derechos de los usuarios</h2>
+<p>Cuando resulte aplicable la normativa de protección de datos, el usuario podrá ejercer los derechos reconocidos por dicha normativa, incluyendo:</p>
+<p>Derecho de acceso.</p>
+<p>Derecho de rectificación.</p>
+<p>Derecho de supresión.</p>
+<p>Derecho a solicitar la limitación del tratamiento.</p>
+<p>Derecho de oposición.</p>
+<p>Derecho a la portabilidad de los datos.</p>
+<p>Derecho a retirar el consentimiento cuando el tratamiento se base en este.</p>
+<p>Para ejercer estos derechos, el usuario podrá contactar con el responsable mediante el correo indicado al final de esta Política de Privacidad.</p>
+<p>Cuando sea necesario para atender la solicitud, podrá solicitarse información adicional que permita verificar razonablemente la identidad del solicitante.</p>
+<p>El ejercicio de estos derechos será gratuito, salvo en aquellos casos en los que la normativa aplicable permita establecer una compensación o rechazar solicitudes manifiestamente infundadas o excesivas.</p>
+<h2>16. Reclamaciones ante la autoridad de control</h2>
+<p>Si el usuario considera que el tratamiento de sus datos personales no se ajusta a la normativa aplicable, podrá presentar una reclamación ante la autoridad de protección de datos competente.</p>
+<p>En España, la autoridad de control es la Agencia Española de Protección de Datos (AEPD).</p>
+<p>Los usuarios residentes en otros países podrán dirigirse, cuando corresponda, a la autoridad de protección de datos competente en su lugar de residencia.</p>
+<h2>17. Menores de edad</h2>
+<p>GLOIX no establece actualmente una edad mínima específica para utilizar la Aplicación.</p>
+<p>La Aplicación no está diseñada específicamente para recopilar datos personales de menores.</p>
+<p>Cuando la legislación aplicable establezca requisitos específicos respecto al tratamiento de datos personales de menores, se aplicarán las garantías correspondientes.</p>
+<h2>18. Modificaciones de esta Política de Privacidad</h2>
+<p>Esta Política de Privacidad podrá modificarse cuando resulte necesario debido a cambios en GLOIX, en los servicios utilizados, en la legislación aplicable o en las prácticas de tratamiento de información.</p>
+<p>La versión vigente estará disponible en la página correspondiente de GLOIX.</p>
+<p>Cuando se produzcan modificaciones relevantes, se procurará informar de ellas mediante los medios razonablemente disponibles.</p>
+<h2>19. Contacto y datos del responsable</h2>
+<p>Para cualquier consulta relacionada con esta Política de Privacidad, el tratamiento de datos o el ejercicio de derechos, puedes contactar con:</p>
+<p>Titular: Bruno Mazzitelli Gorraiz</p>
+<p>NIF/DNI: 44645982S</p>
+<p>Correo electrónico: gloixapp@gmail.com</p>
+<p>Última actualización: 09/09/2026</p>
 </main>
 </body>
 </html>
